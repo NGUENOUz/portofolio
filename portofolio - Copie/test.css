@@ -1,0 +1,172 @@
+.container {
+    position: relative;
+}
+.container .card{
+    position:relative;
+    width:200PX;
+    height: 200px;
+    background: #232323;
+    border-radius: 20PX;
+    overflow: hidden;
+}
+.container .card:before
+{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background:#657236;
+    clip-path: circle(90px at 80% 20%);
+    transition:0.5s ease-in-out;
+}
+
+.container .card:hover::before{
+    clip-path: circle(100px at 80% -20%);
+}
+
+.container .card::after
+{
+    content:'nike';
+    position:absolute;
+    top:30%;
+    left:-20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255,255,255,0.04);
+   
+}
+.container .card .imgBX{
+    position:absolute;
+    top:50px;
+    transform: translatey(-50%);
+    z-index:10000;
+    width: 100%;
+    height: 220px;
+    transition:0.5s;
+}
+.container .card:hover .imgBX{
+    top: 0%;
+    transform: translatey(0%);
+}
+.container .card .imgBX img{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate (-50% , -50%) rotate (-25deg);
+    width: 270px;
+
+}
+.container .card .contentBX{
+    position : absolute;
+    bottom: 0;
+    width: 100%;
+    text-align:center;
+    transition:1s;
+    z-index:10;
+}
+.container .card:hover .contentBX{
+    height: 210px;
+}
+.container .card .contentBX h2{
+    position:relative ;
+    font-weight:600;
+    letter-spacing: 1px;
+    color:#fff;
+}
+.container .card .contentBX .size,
+.container .card .contentBX .COLOR {
+
+    display:flex;
+    justify-content: center ;
+    align-items: center;
+    padding: 8px 20px ;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.container .card:hover .contentBX .COLOR{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.6s;
+}
+.container .card:hover .contentBX .size{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.6s;
+}
+.container .card .contentBX .size h3,
+.container .card .contentBX .COLOR h3{
+    color:#fff;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    margin-right: 10px;
+
+}
+.container .card .contentBX .size span {
+    width:26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    margin: 0 5px;
+    transition: 0.5s;
+    color:#fff;
+    border-radius:4px;
+    cursor:pointer;
+
+}
+.container .card .contentBX .size span{
+    background: #63793e;
+}
+.container .card .contentBX .COLOR span{
+    width: 20px;
+    height: 20px;
+    background: #ff0;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor:pointer;
+}
+.container .card .contentBX .COLOR span:nth-child(2){
+    background: #63793e;
+}
+
+.container .card .contentBX .COLOR span:nth-child(3){
+    background: #ecf0e6;
+}
+.container .card .contentBX .COLOR span:nth-child(4){
+    background: #e21313;
+}
+.container .card .contentBX .COLOR span:nth-child(5){
+    background: #2f1d96;
+}
+.container .card .contentBX .COLOR span:nth-child(6){
+    background: #df7889;
+}
+.container .card .contentBX a{
+    display: inline-block;
+    padding:10px 20px;
+    background: rgb(59, 4, 110);
+    border-radius: 4px;
+    margin-top:10px;
+    text-decoration: none;
+    font-weight: 600;
+    color:#111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+
+    
+}
+.container .card:hover  .contentBX a{
+    opacity: 1;
+    transform:translateY(0px);
+    transition-delay: 0.75s;
+}

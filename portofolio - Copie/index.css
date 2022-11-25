@@ -1,0 +1,601 @@
+body{
+    margin-left: 0;
+    
+    margin-right: 0;
+}
+a {
+    cursor: pointer;
+}
+
+.passage{
+    padding: 12PX 30px;
+   background-color: rgb(7, 1, 14);
+    /* background-color: #e9ad0d; */
+    width: 110px;
+    border-radius: 20px;
+    padding-left:5%;
+    margin-left: 4%;
+    margin-top: 0%;
+    padding-top: 12% 35%;
+
+    
+        animation-duration: 10s;
+        animation-name: slidein;
+        animation-iteration-count: infinite;
+        
+}
+        
+.passage:hover{
+    background-color: rgb(35, 14, 224);
+    border-radius: 12px;
+}
+
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+
+.passage1{
+    padding: 12PX 30px;
+    background-color: #e9ad0d;
+    width: 110px;
+    border-radius: 20px;
+    padding-left:5%;
+    margin-left: 4%;
+    margin-top: 0%;
+    padding-top: 12% 35%;
+
+    
+        animation-duration: 10s;
+        animation-name: passage1;
+        animation-iteration-count: infinite;
+        position: absolute;
+        
+}
+        
+.passage1:hover{
+    background-color: rgb(35, 14, 224);
+    border-radius: 12px;
+}
+
+
+@keyframes passage1 {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+
+
+
+/*stylisation du header*/
+header{
+    background-color:black;
+     position: fixed;
+    width: 100%;
+    margin-top: -2%;
+}
+.logo img{
+    width: 80px;
+    height: 80px;
+    margin-top: -1%;
+    position: absolute;
+}
+.liste{
+   
+   margin-left: 20%;
+   margin-top:2%;
+   /* position: absolute; */
+   /* display:inline-block; */
+
+}
+.liste li{
+    text-decoration: none;
+    display:inline-block; 
+    align-content:space-between ;
+   margin-left:10%;
+    color: white;
+    margin:3%;  margin-top: 1%;
+
+    
+   
+    
+}
+.liste  a {
+     text-decoration: none;
+    display:flex;
+    align-content:space-between ;
+    justify-content: space-between;
+    color: white;
+    padding-top:-13%;
+    cursor:pointer;
+  
+  
+/*stylisation de la section acceuil*/
+    
+}
+.Acceuil{
+    background-color: rgb(7, 1, 14);
+}
+.Acceuil .gauche {
+    display:block;
+    margin-left: 5%;
+   /* transform: translate(-50%, -50%);
+    position: absolute;*/
+    padding-top: 20%;
+    font-family: 'bodoni mt',Arial, Helvetica, sans-serif;
+    
+}
+.Acceuil .gauche p{
+    font-size: 40px;
+    color: white;
+    
+}
+.Acceuil .gauche span{
+    font-size: 44px;
+    color: rgb(223, 46, 15);
+}
+.Acceuil .gauche span:before {
+content:'';
+animation:animate infinite 12s;
+}
+@keyframes animate {
+    0%{
+        content:'Freelancer';
+    }
+
+    20%{
+        content:'Developpeur Web';
+    }
+    40%{
+        content:'Marketeur';
+    }
+
+    60%{
+        content:'youtubeur';
+    }
+
+    80%{
+        content:'blogeur';
+    }
+
+    100%{
+        content:'Freelancer';
+    }
+    
+}
+.plus{
+    height: 60px;
+    width: 200px;
+    border-radius: 18px;
+    box-shadow: 12px 4px 2px 0px black;
+    align-items: center;
+    background-color: white;
+   
+    
+    display: flex;
+
+
+}
+
+.plus a{
+    align-content: center;
+    justify-content: center;
+
+    color: rgb(10, 10, 10);
+    margin-left: 3%;
+    padding: 1%;
+    
+
+
+}
+
+.Acceuil.droite {
+    margin-left: 60%;
+}
+.droite img{
+    margin-left: 45%;
+    margin-top: -40%;
+    margin-bottom: -12%;
+}
+
+/*stylisation de la section a propos */
+.propos{
+    background-color: rgb(7, 1, 14);
+    margin-top: -5%;
+    padding: 5%;
+}
+.propos_title h3{
+    font-size: 60px;
+    margin-top: 10%;
+   margin-left:39%;
+   color: white;
+  
+}
+.propos_gauche img {
+    width:250px
+}
+
+.propos_droite p {
+    margin-left: 
+        35%;
+    margin-top:-25%;
+    font-size:30PX;
+    color:white;
+}
+/*stylisation de la section oeuvre*/
+.oeuvres{
+    background-color: rgb(7, 1, 14);
+    margin-top: -5%;
+    padding: 5%;
+}
+.oeuvre_title h3{
+    font-size: 60px;
+    margin-top: 10%;
+   margin-left:39%;
+   color: white;
+  
+}
+
+.description {
+    margin-left: 46%;
+    margin-top: -40%;
+    padding-bottom: 5%;
+    display: block;
+    /* background-color: black; */
+    width: 700px;
+    height: 400px;
+    color: white;
+
+}
+.logo-langage img{
+   
+    width: 40px;
+    margin: 3%;
+    border: rgb(253, 249, 249) solid 3px;
+    border-radius: 50px;
+
+
+}
+.logo-langage{
+    display: flex;
+    margin-bottom:-6% ;
+    margin-left: 60%;
+}
+.intro_oeuvres{
+
+    margin-left: 10%;
+    font-size: 30px;
+    color: white;
+
+}
+.exemple {
+    display: inline-block;
+    align-content:space-between ;
+    margin:3%;
+    margin-left: 3%;
+}
+ .box1{
+
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+    background-color: bisque;
+    display:inline-block;
+    align-content:space-between ;
+    margin:3%;
+    margin-top: -1%;
+    margin-bottom: -20%;
+} 
+.box2{
+
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+    background-color: bisque;
+    display: inline-block;
+    align-content:space-between ;
+    margin:3%;
+} 
+.box3{
+
+    width: 200px;
+    height: 210px;
+    border-radius: 12px;
+    background-color: bisque;
+    display: inline-block;
+    align-content: space-between;
+    /* margin: 3%; */
+    margin-left: 42%;
+
+
+} 
+
+.box4{
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+    background-color: bisque;
+    /* display: inline-block; */
+    align-content: space-between;
+    margin: 3%;
+    margin-top: -40%;
+    margin-left: 3%;
+    padding-top: 1%;
+}
+.exemple .work img{
+    width: 200px;
+    height: 200px;
+    margin-top:-30%;
+
+}
+
+/*stylisation de la zone de contact */
+#contact {
+    background-color: rgb(7, 1, 14);
+    /* background-color: #0f0f0f33; */
+    width: 100%;
+    height: 100vh;
+    padding-top: 10%;
+   
+}
+.contact_container{
+
+}
+.contact_container h2{
+    color: #882f0f;
+      
+   }
+
+
+
+.contact_container {
+    
+
+}
+.contact_container h2{
+    margin-left: 30%;
+    margin-top: -4%;
+    font-size: 57px;
+}
+form{
+    margin-left: 25%;
+    height: 400px;
+    width: 600px;
+    border-radius: 17%;
+    background-color: #30302cce;
+    margin-top: 8%;
+   
+
+}
+.nom{
+    margin-top: -6%;
+    margin-left: 9%;
+    height: 100px;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-color: #e9ad0d;
+    font-size: 50px;
+    color: white;
+    
+}
+.nom input {
+    margin-top: 30PX;
+    height: 20px;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    width: 250PX;
+    background-color: transparent;
+    border-color: #230de9;
+    
+}
+
+.email {
+    margin-top: -3%;
+    margin-left: 9%;
+    height: 100px;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;  
+    color: white;
+    
+    font-size: 50px;
+    
+    
+}
+.email input{
+    margin-top: 34PX;
+    height: 20px;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    width: 250PX; 
+    background-color: transparent;
+    border-color: #230de9;
+}
+ textarea{
+    margin-left: 20%;
+    height: 90px;
+    width: 300px;
+
+    height: 100px;
+    resize: none;
+}
+.message ::placeholder{
+    margin-left: 5%;
+    margin-top:-5%;
+}
+button{
+    margin-left: 30%;
+    margin-top: 12%;
+
+}
+.doit {
+    padding-left: 65%;
+    padding-top: 29%;
+    margin-top: -20%;
+    
+
+}
+.envoie {
+    margin-left: 13%; 
+    margin-top:2%; 
+}
+.envoie :hover{
+    border-radius: 10px;
+}
+button{
+    
+    border-color: #f8f7f5;
+    border-radius: 12%;
+    cursor: pointer;
+    height: 40px;
+    box-shadow: 5px 10px 25px rgb(192 199 192 / 37%);
+    
+}
+button:hover{
+    text-decoration: none;
+}
+
+.envoie p{
+   font-size: 20px;
+   font-weight: 600;
+   margin-top: 4%;
+   color: #230de9;
+}
+.envoie p:hover{
+    text-decoration: none;
+}
+/*stylisation du footer */
+footer{
+    /* background-color: rgb(51, 52, 54); */
+    background-color:rgb(22, 21, 21);
+    color: white;
+    overflow: hidden;
+}
+
+.footer_centre{
+    display: block;
+    margin-left: 10%;
+    margin-top: -12%;
+}
+.footer_centre img{
+    width: 50px;
+}
+.footer_centre a{
+    margin-left: 2%;
+}
+.footer_droite{
+   margin-left: 75%; 
+   margin-top: -12%;
+}
+.copy{
+    margin-left: 35%;
+}
+.copy img{
+    width: 30px;
+}
+.copy p{
+    margin-left: 5%;
+    margin-top: -2%;
+}
+
+.footer-logo img{
+    width: 170px;
+    margin-left: 41%;
+}
+
+@media(max-width:991px){
+
+
+    .Acceuil .gauche p{
+        font-size: 20px;
+        color: white;
+        
+    }
+    .Acceuil .gauche span{
+        font-size: 24px;
+        color: rgb(223, 46, 15);
+    }
+
+    .plus{
+        height: 40px;
+        width: 100px;
+        border-radius: 12px;
+        box-shadow: 12px 4px 2px 0px black;
+        align-items: center;
+        background-color: white;
+       
+        
+        display: flex;
+    
+    
+    }
+
+    .Acceuil.droite {
+        margin-left: 10%;
+    }
+    .droite img{
+        margin-left: 55%;
+        margin-top: -56%;
+    margin-bottom: -8%; 
+        width: 350px;
+    }
+
+    
+/*stylisation de la section a propos */
+.propos_title h3{
+    font-size: 40px;
+    margin-top: 5%;
+   margin-left:20%;
+   color: white;
+  
+}
+.propos_gauche img {
+    width:150px;
+margin-left: -4%;
+}
+
+.propos_droite p {
+    margin-left: 
+        35%;
+    margin-top:-20%;
+    font-size:20PX;
+    color:white;
+}
+.propos_droite{
+    width: 300px;
+    height: auto;
+    color: white;
+    margin-left: 30%;
+    margin-top: -43%;
+    margin-bottom: 10%;
+}
+
+}
+
+
+
+
+
+
+
+
+
